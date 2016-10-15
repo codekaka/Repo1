@@ -4,5 +4,5 @@ cool
 c
 d
 d
-c
+cc
 c
