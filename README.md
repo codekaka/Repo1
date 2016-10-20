@@ -4,16 +4,6 @@ adadsa
 acs
 asd
 asd
-c
-c
-c
-c
-c
-c
-c
-s
-s
-a
 a
 a
 a
