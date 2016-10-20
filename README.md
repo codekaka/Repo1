@@ -13,3 +13,6 @@ c
 c
 s
 s
+small
+samll
+samll
