@@ -16,7 +16,7 @@ public class Widget {
 
 	/**
 	 * Is the widget currently enabled?
-	 * 
+	 *
 	 * @return true if enabled, false otherwise
 	 */
 	public boolean isEnabled() {
@@ -25,7 +25,7 @@ public class Widget {
 
 	/**
 	 * Set the widget enable state
-	 * 
+	 *
 	 * @param enabled
 	 * @return this widget
 	 */
@@ -33,13 +33,23 @@ public class Widget {
 		this.enabled = enabled;
 		return this;
 	}
-	
+
 	/**
 	 * Is the widget currently enabled?
-	 * 
+	 *
 	 * @return true if enabled, false otherwise
 	 */
 	public boolean testIsEnabled() {
 		return enabled;
+	}
+	/**
+	 * Set the widget enable state
+	 *
+	 * @param enabled
+	 * @return this widget
+	 */
+	public Widget testSetEnabled(boolean enabled) {
+		this.enabled = enabled;
+		return this;
 	}
 }
