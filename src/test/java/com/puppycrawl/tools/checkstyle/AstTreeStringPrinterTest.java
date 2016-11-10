@@ -34,6 +34,7 @@ import com.puppycrawl.tools.checkstyle.api.CheckstyleException;
 public class AstTreeStringPrinterTest {
 
     private static String getNonCompilablePath(String filename) {
+        // return the filename
         return "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/" + filename;
     }
 
