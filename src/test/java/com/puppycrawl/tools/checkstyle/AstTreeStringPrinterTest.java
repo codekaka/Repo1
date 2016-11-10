@@ -63,7 +63,7 @@ public class AstTreeStringPrinterTest {
     
     //Adding duplicate code
     @Test
-    public void testParseFile() throws Exception {
+    public void testParseFile2() throws Exception {
         final String actual = AstTreeStringPrinter.printFileAst(
             new File(getPath("InputAstTreeStringPrinterComments.java")), false);
         final String expected = new String(Files.readAllBytes(Paths.get(
