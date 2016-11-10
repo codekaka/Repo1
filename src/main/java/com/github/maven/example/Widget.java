@@ -22,6 +22,9 @@ public class Widget {
 	public boolean isEnabled() {
 		return enabled;
 	}
+	public boolean isEnabledDuplicate() {
+		return enabled;
+	}
 
 	/**
 	 * Set the widget enable state
