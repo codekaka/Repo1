@@ -60,6 +60,16 @@ public class AstTreeStringPrinterTest {
             getPath("expectedInputAstTreeStringPrinter.txt"))), StandardCharsets.UTF_8);
         Assert.assertEquals(expected, actual);
     }
+    
+    //Adding duplicate code
+    @Test
+    public void testParseFile2() throws Exception {
+        final String actual = AstTreeStringPrinter.printFileAst(
+            new File(getPath("InputAstTreeStringPrinterComments.java")), false);
+        final String expected = new String(Files.readAllBytes(Paths.get(
+            getPath("expectedInputAstTreeStringPrinter.txt"))), StandardCharsets.UTF_8);
+        Assert.assertEquals(expected, actual);
+    }
 
     @Test
     public void testParseFileWithComments() throws Exception {
@@ -80,6 +90,7 @@ public class AstTreeStringPrinterTest {
         final String expected = new String(Files.readAllBytes(Paths.get(
                 getPath("expectedInputAstTreeStringPrinterJavadoc.txt"))), StandardCharsets.UTF_8)
                 .replaceAll("\\\\r\\\\n", "\\\\n");
+        //Assert
         Assert.assertEquals(expected, actual);
     }
 }
