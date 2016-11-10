@@ -33,4 +33,14 @@ public class Widget {
 		this.enabled = enabled;
 		return this;
 	}
+		/**
+	 * Set the widget enable state
+	 * 
+	 * @param enabled
+	 * @return this widget
+	 */
+	public Widget setEnabledDuplicate(boolean enabled) {
+		this.enabled = enabled;
+		return this;
+	}
 }
