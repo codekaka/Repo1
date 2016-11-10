@@ -33,4 +33,13 @@ public class Widget {
 		this.enabled = enabled;
 		return this;
 	}
+	
+	/**
+	 * Is the widget currently enabled?
+	 * 
+	 * @return true if enabled, false otherwise
+	 */
+	public boolean testIsEnabled() {
+		return enabled;
+	}
 }
