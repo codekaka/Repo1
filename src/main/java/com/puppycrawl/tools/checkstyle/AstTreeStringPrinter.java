@@ -107,6 +107,30 @@ public final class AstTreeStringPrinter {
         }
         return messageBuilder.toString();
     }
+       /**
+     * Prints full tree (java + comments + javadoc) of the DetailAST.
+     * @param ast root DetailAST
+     * @return Full tree
+     */
+    private static String printJavaAndJavadocTreeDuplicate(DetailAST ast) {
+        final StringBuilder messageBuilder = new StringBuilder();
+        DetailAST node = ast;
+        while (node != null) {
+            if (node.getType() == TokenTypes.BLOCK_COMMENT_BEGIN
+                    && JavadocUtils.isJavadocComment(node)) {
+                final String javadocTree = parseAndPrintJavadocTree(node);
+                messageBuilder.append(javadocTree);
+            }
+            else {
+                messageBuilder.append(getIndentation(node))
+                    .append(getNodeInfo(node))
+                    .append(LINE_SEPARATOR)
+                    .append(printJavaAndJavadocTree(node.getFirstChild()));
+            }
+            node = node.getNextSibling();
+        }
+        return messageBuilder.toString();
+    }
 
     /**
      * Parses block comment as javadoc and prints its tree.
