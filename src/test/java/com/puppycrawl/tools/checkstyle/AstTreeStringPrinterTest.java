@@ -80,6 +80,7 @@ public class AstTreeStringPrinterTest {
         final String expected = new String(Files.readAllBytes(Paths.get(
                 getPath("expectedInputAstTreeStringPrinterJavadoc.txt"))), StandardCharsets.UTF_8)
                 .replaceAll("\\\\r\\\\n", "\\\\n");
+        //Assert
         Assert.assertEquals(expected, actual);
     }
 }
