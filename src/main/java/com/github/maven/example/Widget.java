@@ -50,6 +50,8 @@ public class Widget {
 	 */
 	public Widget testSetEnabled(boolean enabled) {
 		this.enabled = enabled;
+		int a=0;
+		
 		return this;
 	}
 }
