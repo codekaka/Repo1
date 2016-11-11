@@ -23,6 +23,12 @@ public class Widget {
 		return enabled;
 	}
 	public boolean isEnabledDuplicate() {
+		int a = 1;
+		int b = 10;
+		if(a<b)
+			int c = a;
+		else
+			int c = b;
 		return enabled;
 	}
 
