@@ -28,6 +28,7 @@ $ mvn clean install
 ```
 
 The compiled, source, and Javadoc JAR files will be uploaded as downloads [here](https://github.com/kevinsawicki/github-maven-example/downloads).
+a
 
 # Using the site plugin
 
