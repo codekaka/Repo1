@@ -33,6 +33,11 @@ public class Widget {
 		this.enabled = enabled;
 		return this;
 	}
+	
+	public Widget setDuplicatedEnabled(boolean enabled) {
+		this.enabled = enabled;
+		return this;
+	}
 
 	/**
 	 * Is the widget currently enabled?
