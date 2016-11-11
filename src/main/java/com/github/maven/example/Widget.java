@@ -36,4 +36,8 @@ public class Widget {
 		this.enabled = enabled;
 		return this;
 	}
+	public Widget setEnabledDuplicate(boolean enabled) {
+		this.enabled = enabled;
+		return this;
+	}
 }
