@@ -17,6 +17,7 @@ public class Widget {
 	/**
 	 * Is the widget currently enabled?
 	 * 
+	 * param none
 	 * @return true if enabled, false otherwise
 	 */
 	public boolean isEnabled() {
