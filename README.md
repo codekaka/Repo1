@@ -1,7 +1,7 @@
 This is an example project that uses the [GitHub Maven Plugins](https://github.com/github/maven-plugins).
 
 See the [POM file](https://github.com/kevinsawicki/github-maven-example/blob/master/example/pom.xml)
-for how the downloads plugin and site plugin are configured.
+for how the downloads plugin and site plugin are configured. a
 
 # Getting started
 
