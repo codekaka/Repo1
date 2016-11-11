@@ -22,6 +22,14 @@ public class Widget {
 	public boolean isEnabled() {
 		return enabled;
 	}
+	/**
+	 * Is the widget currently enabled?
+	 * 
+	 * @return true if enabled, false otherwise
+	 */
+	public boolean isEnabledDuplicate2() {
+		return enabled;
+	}
 	public boolean isEnabledDuplicate() {
 		return enabled;
 	}
