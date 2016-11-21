@@ -32,4 +32,19 @@ public class WidgetTest {
 		widget.setEnabled(true);
 		assertTrue(widget.isEnabled());
 	}
+	
+	@Test
+	public void updateEnableStateClone() {
+		Widget widget = new Widget();
+		widget.setEnabled(false);
+		assertFalse(widget.isEnabled());
+		widget.setEnabled(true);
+		assertTrue(widget.isEnabled());
+		
+		Widget widget2 = new Widget();
+		widget2.setEnabled(false);
+		assertFalse(widget2.isEnabled());
+		widget2.setEnabled(true);
+		assertTrue(widget2.isEnabled());
+	}
 }
