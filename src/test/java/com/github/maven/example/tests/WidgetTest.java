@@ -40,5 +40,11 @@ public class WidgetTest {
 		assertFalse(widget.isEnabled());
 		widget.setEnabled(true);
 		assertTrue(widget.isEnabled());
+		
+		Widget widget2 = new Widget();
+		widget2.setEnabled(false);
+		assertFalse(widget2.isEnabled());
+		widget2.setEnabled(true);
+		assertTrue(widget2.isEnabled());
 	}
 }
