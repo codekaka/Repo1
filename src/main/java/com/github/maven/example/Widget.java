@@ -23,7 +23,7 @@ public class Widget {
 		return enabled;
 	}
 
-	public boolean isEnabled1() {
+	public boolean isEnabled2() {
 		return enabled;
 	}
 
