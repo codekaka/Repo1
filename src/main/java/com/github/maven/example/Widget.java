@@ -23,6 +23,10 @@ public class Widget {
 		return enabled;
 	}
 
+	public boolean isEnabled1() {
+		return enabled;
+	}
+
 	/**
 	 * Set the widget enable state
 	 *
