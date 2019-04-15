@@ -26,6 +26,7 @@ public class WidgetTest {
 	 */
 	@Test
 	public void updateEnableState() {
+		int a = 10;
 		Widget widget = new Widget();
 		widget.setEnabled(false);
 		assertFalse(widget.isEnabled());
