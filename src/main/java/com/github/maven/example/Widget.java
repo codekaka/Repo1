@@ -31,6 +31,7 @@ public class Widget {
 	 */
 	public Widget setEnabled(boolean enabled) {
 		this.enabled = enabled;
+		System.out.println("Testing");
 		return this;
 	}
 
