@@ -32,4 +32,16 @@ public class WidgetTest {
 		widget.setEnabled(true);
 		assertTrue(widget.isEnabled());
 	}
+	
+	/**
+	 * Test enabling and disabling a {@link Widget}
+	 */
+	@Test
+	public void updateDupEnableState() {
+		Widget widget = new Widget();
+		widget.setEnabled(false);
+		assertFalse(widget.isEnabled());
+		widget.setEnabled(true);
+		assertTrue(widget.isEnabled());
+	}
 }
