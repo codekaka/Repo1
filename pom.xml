@@ -63,6 +63,17 @@
 				</executions>
 			</plugin>
 			<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-help-plugin</artifactId>
+<executions>
+<execution>
+<goals>
+<goal>jar</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
 				<version>0.7</version>
