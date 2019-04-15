@@ -40,6 +40,7 @@ public class Widget {
 	 * @return true if enabled, false otherwise
 	 */
 	public boolean testIsEnabled() {
+		int b=0;
 		return enabled;
 	}
 	/**
